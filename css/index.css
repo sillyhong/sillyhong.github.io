@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/*头部样式*/
+.header {
+	height: 30px;
+	line-height: 30px;
+	background-color: #F1F1F1; 
+}
+
+.header .box {
+	height: 30px;
+}
+
+.left-list {
+	float: left
+}
+
+.left-list li {
+	float: left;
+	padding-right: 18px;
+	position: relative;
+}
+
+.header i {
+	height: 14px;
+	width: 14px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top:14px;
+	overflow: hidden;
+}
+
+.header s {
+	height: 14px;
+	width: 14px;
+	display: block;
+	position: absolute;
+	top:-16px;
+}
+
+.right-list	{
+	float: right;
+}
+
+.right-list li {
+	float: left;
+	padding: 0 10px;
+	position: relative;
+}
+
+.right-list .special  {
+	padding: 0 18px 0 10px;
+}
+
+.right-list .line {
+	width: 1px;
+	height: 12px;
+	background-color: #ddd;
+	margin-top: 9px;
+	padding: 0;
+}
+
+.right-list .s-phone {
+      padding: 0 20px;
+}
+
+.right-list .s-phone:hover span{
+	background-position: 0 -25px;
+}
+
+.right-list .phone {
+	width: 15px;
+	height: 20px;
+	display: block;
+    background: url(../img/jd2015img.png) no-repeat;
+    position: absolute;
+    left:0;
+	top: 5px;
+}
+
+
+
+/*顶部广告开始*/
+.top-banner {
+	height: 80px;
+	background-color: #1A329c;
+}
+
+.top-banner .box {
+       position: relative;
+}
+
+.close {
+      width: 19px;
+      height: 19px;
+      display: block;
+      background: url(../img/close.png) no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;   /*鼠标为小手模式*/
+}
+.close:hover {
+
+      background-position: 0 -19px;
+}
+
+
+
+
+/*logo部分开始*/
+.main-logo {
+
+}
+
+
+.l-logo {
+	float: left;
+	width: 362px;
+	height: 100px;
+}
+
+.l-logo a {
+      width: 270px;
+      height: 120px;
+      display: block;
+      background: url(../img/logo1.png) no-repeat;
+      text-indent: -2000px;
+}
+
+.t-search {
+	float: left;
+	border: 2px solid #B61D1D;
+	margin-top: 28px;
+
+}
+
+.t-search .search {
+	width: 450px;
+	height: 32px;
+	padding-left: 4px;
+	float: left;
+}
+
+.t-search .btn {
+	width: 82px;
+	height: 32px;
+	background-color: #B61D1D;
+	float: left;
+	color:#fff;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.cart {
+	float: right;
+	height: 34px;
+	width: 139px;
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	margin-top: 28px;
+	text-align: center;
+	line-height: 34px;
+	position: relative;
+}
+
+.cart i {
+	width: 18px;
+	height: 16px;
+	display:block;
+    background: url(../img/jd2015img.png) no-repeat 0 -90px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+.cart s {
+	/*设置最小宽度*/
+	min-width: 16px;
+	height: 14px;
+	line-height: 14px;
+	background-color: #C81623;
+	display: block;
+	color:#fff;
+	position: absolute;
+	text-align: center;
+	top: -5px;
+	right: 20px;
+	/*边框圆角化*/
+	border-radius: 8px 8px 8px 0;
+}
+
+.hotword {
+	margin-top: 10px;
+}
+
+.hotword li {
+	float: left;
+	margin-right: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
