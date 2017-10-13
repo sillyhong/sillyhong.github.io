@@ -10,43 +10,43 @@ body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd {
     list-style: none;
 }
 input,img {
-	 border: 0 none;
-	/*消除轮廓线*/
-	outline-style: none;
-	margin:0;
-	padding: 0;
-	vertical-align: bottom;
+     border: 0 none;
+    /*消除轮廓线*/
+    outline-style: none;
+    margin:0;
+    padding: 0;
+    vertical-align: bottom;
 }
 i,s {
     font-style: normal;
     text-decoration: none;
 }
 a {
-	width: 100%;
-	color:#666;
-	text-decoration: none;
+    /*width: 100%;*/
+    color:#666;
+    text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 /*清除浮动*/
 .clearfix:after {
-	content: '';
-	height: 0;
-	line-height: 0;
-	clear: both;
-	/*隐藏超出部分*/
-	visibility: hidden;
+    content: '';
+    height: 0;
+    line-height: 0;
+    clear: both;
+    /*隐藏超出部分*/
+    visibility: hidden;
 }
 .clearfix {
-	/*设置缩放比例*/
-	zoom:1;
+    /*设置缩放比例*/
+    zoom:1;
 }
 
 .clearfix {
-	/*和原来相比，缩放的比例*/
-	zoom:1;
+    /*和原来相比，缩放的比例*/
+    zoom:1;
 }
 
 .box {
@@ -55,9 +55,9 @@ a:hover {
 }
 
 .f_l {
-	float: left;
+    float: left;
 }
 
 .r_l {
-	float: right;
+    float: right;
 }

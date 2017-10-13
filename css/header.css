@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+/*头部样式*/
+.header {
+	height: 30px;
+	line-height: 30px;
+	background-color: #F1F1F1; 
+}
+
+.header .box {
+	height: 30px;
+}
+
+.left-list {
+	float: left
+}
+
+.left-list li {
+	float: left;
+	padding-right: 18px;
+	position: relative;
+}
+
+.header i {
+	height: 14px;
+	width: 14px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top:14px;
+	overflow: hidden;
+}
+
+.header s {
+	height: 14px;
+	width: 14px;
+	display: block;
+	position: absolute;
+	top:-16px;
+}
+
+.right-list	{
+	float: right;
+}
+
+.right-list li {
+	float: left;
+	padding: 0 10px;
+	position: relative;
+}
+
+.right-list .special  {
+	padding: 0 18px 0 10px;
+}
+
+.right-list .line {
+	width: 1px;
+	height: 12px;
+	background-color: #ddd;
+	margin-top: 9px;
+	padding: 0;
+}
+
+.right-list .s-phone {
+      padding: 0 20px;
+}
+
+.right-list .s-phone:hover span{
+	background-position: 0 -25px;
+}
+
+.right-list .phone {
+	width: 15px;
+	height: 20px;
+	display: block;
+    background: url(../img/jd2015img.png) no-repeat;
+    position: absolute;
+    left:0;
+	top: 5px;
+}
+
+
+
+/*顶部广告开始*/
+.top-banner {
+	height: 70px;
+	/*background-color: #1A329c;*/
+}
+
+.top-banner .box {
+       position: relative;
+}
+
+.close {
+      width: 19px;
+      height: 19px;
+      display: block;
+      background: url(../img/close.png) no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;   /*鼠标为小手模式*/
+}
+.close:hover {
+
+      background-position: 0 -19px;
+}
+
+
+
+
+/*logo部分开始*/
+.main-logo {
+	position: relative;
+	height: 120px;
+}
+
+
+.l-logo {
+	float: left;
+	width: 362px;
+	height: 100px;
+}
+
+.l-logo a {
+      width: 270px;
+      height: 120px;
+      display: block;
+      background: url(../img/logo1.png) no-repeat;
+      text-indent: -2000px;
+}
+
+.t-search {
+	float: left;
+	border: 2px solid #B61D1D;
+	margin-top: 28px;
+
+}
+
+.t-search .search {
+	width: 450px;
+	height: 32px;
+	padding-left: 4px;
+	float: left;
+}
+
+.t-search .btn {
+	width: 82px;
+	height: 32px;
+	background-color: #B61D1D;
+	float: left;
+	color:#fff;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.cart {
+	float: right;
+	height: 34px;
+	width: 139px;
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	margin-top: 28px;
+	text-align: center;
+	line-height: 34px;
+	position: relative;
+}
+
+.cart i {
+	width: 18px;
+	height: 16px;
+	display:block;
+    background: url(../img/jd2015img.png) no-repeat 0 -90px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+.cart s {
+	/*设置最小宽度*/
+	min-width: 16px;
+	height: 14px;
+	line-height: 14px;
+	background-color: #C81623;
+	display: block;
+	color:#fff;
+	position: absolute;
+	text-align: center;
+	top: -5px;
+	right: 20px;
+	/*边框圆角化*/
+	border-radius: 8px 8px 8px 0;
+}
+
+.hotword {
+	margin-top: 10px;
+}
+
+.hotword li {
+	float: left;
+	margin-right: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+
+/*全部商品分类*/
+.book {
+	height: 44px;
+}
+
+.book .l-product {
+	float: left;
+	width: 210px;
+	height: 44px;
+	background-color: #766A6A;
+	position: relative;
+
+}
+
+.book .l-product:hover {
+	cursor: pointer;
+	overflow: visible;
+}
+
+.book .title {
+	height: 44px;
+	width: 200px;
+	line-height: 44px;
+	color: white;
+	padding-left: 10px;
+}
+
+.book .book-list {
+	width: 209px;
+	height: 360px;
+	background-color: #BC9E9E;
+	position: absolute;
+	/*提高层叠值*/
+	z-index: 5;
+}
+
+.book .book-list li {
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.book .book-list li:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+.book .book-list li:hover a {
+	color: red;
+}
+
+
+.book .book-list li a {
+	color: #fff;
+}
+
+.book .book-list span {
+	float: right;
+	margin-right: 13px;
+}
+
+
+.m-product {
+     float: left;
+     line-height: 44px;
+}
+
+.m-product ul {
+     float: left;
+}
+
+.m-product .l-ul {
+     margin-left: 20px;
+}
+
+.m-product li {
+    float: left;
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.m-product li a:hover {
+     color: #B1191A;
+}
+
+.r-follow {
+	float: right;
+	margin-top:15px;
+	position: relative;
+}
+
+.r-follow a {
+	width: 20px;
+	height: 20px;
+}
+
+.r-follow a i {
+	display: block;
+	width: 18px;
+	height: 16px;
+	background:url(../img/follow.png) no-repeat ;
+	position: absolute;
+	left: -18px;
+	top:-1px;
+}
+.r-follow a:hover i {
+	background-position: 0 -16px;
+}
