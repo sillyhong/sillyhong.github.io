@@ -121,7 +121,8 @@
 }
 
 .recommend {
-     height: 152px;
+    height: 210px;
+     /*height: 152px;*/
      position: relative;
      margin-top: 10px;
 
