@@ -220,6 +220,7 @@
 
 }
 
+
 .book .l-product:hover {
 	cursor: pointer;
 	overflow: visible;
@@ -240,6 +241,7 @@
 	position: absolute;
 	/*提高层叠值*/
 	z-index: 5;
+	display: none;
 }
 
 .book .book-list li {
@@ -261,7 +263,7 @@
 
 .book .book-list li a {
 	color: #fff;
-}
+}	
 
 .book .book-list span {
 	float: right;
@@ -316,3 +318,5 @@
 .r-follow a:hover i {
 	background-position: 0 -16px;
 }
+
+

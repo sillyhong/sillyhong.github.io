@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <title>书城首页</title>
-    <!-- 网页图标 -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>书本页面</title>
+	<!-- 网页图标 -->
     <link rel="shortcut icon" href="./favicon.ico" tyoe="image/x-icon">
 
     
@@ -15,10 +15,11 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <!-- 导入footer.css -->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-
-  </head>
-  <body>
-      <!--头部开始 -->
+    <!-- 导入book.css -->
+    <link rel="stylesheet" type="text/css" href="css/book.css">
+</head>
+<body>
+	 <!--头部开始 -->
       <div class="header">
         <div class="box">
             <!-- 头部左边 -->
@@ -135,6 +136,7 @@
           </ul>
         </div>
 
+	
 
 
     </div>
@@ -144,12 +146,16 @@
     <!-- 全部书分类 -->
     <div class="book">
       <div class="box">
-        <div class="l-product">
+        <div class="l-product-2">
             <div class="title">
                 分类
+					<span><i>
+							<s>◇</s>
+						</i>
+						</span>
             </div>
             <!-- 书本分类 -->
-            <div class="book-list">
+            <div class="book-list-2">
               <ul>
                 <li><a href="#">特色书单</a><span>></span></li>
                 <li><a href="#">小说</a><span>></span></li>
@@ -195,131 +201,150 @@
             </a>
          </div>
       </div>
-    </div>    
-
-    <!-- 图片背景暗色 -->
-    <div class="hd-bg">
-      
-    </div>
+    </div> 
 
 
-    <!-- 主体banner部分开始 -->
-    <div class="banner box">
-       <!--左侧盒子-->
-         <div class="left-banner">
+   <!-- 书本详细内容 -->
+   <div class="content box"> 
+	   <!-- 导航栏 -->			
+			<div class="rootNav">
+				<strong><a href="#">图书</a></strong>&nbsp;&nbsp;>
+				<span><a href="#">计算机IT类</a></span>>
+				<span><a href="#">WEB前端</a></span>>
+				<span><a href="#">Vue.js</a></span> 	
+			</div>
+		
+		<!-- 左边 -->
+		<div class="l-cont">
+			<!-- 上图片展示 -->
+			<div class="preview">
+					<img src="./img/vue2.jpg" alt="">
+			</div>
+			<!-- 下图片列表展示 -->
+			<div class="bot-imglist">
+				<a href="#" class="lside"></a>
+				<a href="#" class="rside"></a>
+					<div class="imglist">
+						<ul class="l-img">
+							<li><img src="./img/vue3.jpg" alt=""></li>
+						</ul>
+					</div>
+			</div>
+		</div>
 
-             <a href="#">
-                 <img src="img/59cb02bbN9c6a2173.jpg!q80.webp" alt=""/>
-             </a>
+		<!-- 右边 -->
+		<div class="r-cont">
+			
+			<div class="name">
+				Vue.js权威指南
+			</div>
+				<p class="p1">与React|Angular三分天下 大热框架首著惊现 Vue之父作序力荐</p>
+				<p class="p2">张耀春，黄轶，王静，苏伟，王瑾 ... <span>著</span></p>
 
-             <div class="pages">
-                 <a href="#" class="l-page"><</a>
-                 <a href="#" class="r-page">></a>
-             </div>
+			<div class="money">
+				<!-- 价格 -->
+				<div class="price clearfix">
+					<div class="lpric f_l">
+						价格 <span>￥53.00</span> 
+						<i>降价通知</i>
+					</div>
+					
+					<div class="rnumber f_r">
+						累计评价
+						<span>121231</span>
+					</div>
+				</div>
 
+				<!-- 促销 -->
+				<div class="cx">
 
-             <div class="numbers">
-                 <ul>
-                     <li><a href="#" style="background-color: #B61D1D">1</a></li>
-                     <li><a href="#">2</a></li>
-                     <li><a href="#">3</a></li>
-                     <li><a href="#">4</a></li>
-                     <li><a href="#">5</a></li>
-                     <li><a href="#">6</a></li>
-                 </ul>
-             </div>
-
-         </div>
-
-       <!-- 右侧盒子 -->
-        <div class="rbanner-news">
-           <div class="top-news">
-
-                    <div class="news-title">
-                         <h5>书城快报</h5>
-                         <a href="#">更多</a>
-                    </div>
-
-                    <div class="content">
-
-                        <ul>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li> 
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li> 
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-                            <li><a href="#">[特惠]一元空调热水器满99元理解</a></li>
-
-                        </ul>
-                    </div>
-
-          </div>
-
-
-          <div class="coupon">
-              <img src="./img/coupon.png!q80.webp" alt="">
-          </div>
-        </div>
-    </div>
-
-    <!-- 今日推荐 -->
-    <div class="recommend box">
-      <div class="left-recommend">123</div>
-
-      <div class="right-recommend">
-          <ul>
-            <li><a href="#"></a><img src="./img/jquery.jpg" alt=""></li>
-            <li><a href="#"></a><img src="./img/angular.jpg" alt=""></li>
-            <li><a href="#"></a><img src="./img/vue.jpg" alt=""></li>
-            <li><a href="#"></a><img src="./img/nodejs.jpg" alt=""></li>
-          </ul>
-      </div>
-
-    </div>
-  
-
-  <!-- 结尾部分开始 -->
-  <div class="footer">
-    
-
-    <div class="bot-footer box">
-
-               <div class="friend-link">
-                   <a href="#">关于我们|</a>
-                   <a href="#">联系我们|</a>
-                   <a href="#">商家入驻|</a>
-                   <a href="#">营销中心|</a>
-                   <a href="#">手机京东|</a>
-                   <a href="#">友情链接|</a>
-                   <a href="#">销售联盟|</a>
-                   <a href="#">京东社区|</a>
-                   <a href="#">京东公益|</a>
-                   <a href="#">English Site|</a>
-                   <a href="#">Contact Us</a>
-               </div>
+                          <div class="cx1">
+                              促&nbsp;销  以下促销可在购物车任选其一
+                          </div>
+                          <div class="cx2">
+                              <s>满赠</s> 满100.00元即赠热销商品，赠完即止，请在购物车点击领取   详情 >>
+                          </div>
+                          <div class="cx3">
+                              <s>加价购</s> 满100.00元另加79.00元即可在购物车换购热销商品   详情 >>
+                          </div>
+                 </div>
+			</div>
 
 
-               <div class="friend-link2">
-                   <p>北京市公安局朝阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008  |  新出发京零 字第大120007号</p>
-                   <p>音像制品经营许可证苏宿批005号  |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号</p>
-                   <p>网络文化经营许可证京网文[2014]2148-348号  违法和不良信息举报电话：4006561155  Copyright © 2004-2016  京东JD.com 版权所有</p>
-                   <p>京东旗下网站：京东钱包</p>
-               </div>
+			<!-- 选择部分 -->
+			<div class="choose">
 
 
-              <a href="#"><img src="img/bt1.png" alt=""/></a>
-              <a href="#"><img src="img/bt2.png" alt=""/></a>
-              <a href="#"><img src="img/bt3.jpg" alt=""/></a>
-              <a href="#"><img src="img/bt4.png" alt=""/></a>
-              <a href="#"><img src="img/bt5.jpg" alt=""/></a>
-              <a href="#"><img src="img/bt6.jpg" alt=""/></a>
+				<div class="top">
+					<div class="top-zz">
+						<span>增值业务</span>
+						<a href="#">
+						<i></i>
+						礼品包装</a>
+					</div>
+					
+					<div class="peisong">
+						 <div class="pei1">
+					                                  配 送 至&nbsp;
+					                                  北京朝阳区三环以内
+					                                  有货
+					                                  支持
+					
+					                                  99元免运费
+					                                  货到付款
+					                                  夜间配
+					                                  自提
+					                                  售后到家
+					                              </div>
+					
+					                              <div class="pei2">
+					                                  由 京东 发货，并提供售后服务。<strong>15:00</strong>前完成下单,可预约今晚送达
+					                              </div>
+					</div>
+				</div>
+				
+					<hr>
+				<!-- 中间盒子 -->
+				<di class="middle">
 
-          </div>
-  </div>
+					<!-- 选择系列 -->
+					<div class="b-choose">
+					<div class="f_l">系列选择</div>
+						<ul class="f_l">
+					
+							<li style="border: 1px solid red">vue.js</li>
+							<li>Meteor全栈</li>
+							<li>React全栈</li>
+							<li>React与Redux</li>
+						</ul>
+			
+					</div>
+				</di>
+	
+				
+				<!-- 底部 -->
+				<div class="bottom">
+					<div class="txt">
+						<input type="text" value="1">
 
-  </body>
-  <script src="js/jquery.min.js"></script>
+					<div class="buttons">
+						<div class="top-btn">+</div>
+						<div class="bot-btn">-</div>
+					</div>
+					</div>
+
+					<!-- 加入购物车 -->
+					<div class="add-cart">
+						加入购物车
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+			
+				
+			
+	</div>
+</body>
 </html>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*底部开始*/
+.bot-footer {
+   text-align: center;
+}
+
+.friend-link {
+     margin: 10px 0;
+}
+
+.friend-link2 {
+     line-height: 25px;
+
+     margin-bottom: 10px;
+}
