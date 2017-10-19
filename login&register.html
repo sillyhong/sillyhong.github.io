@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>书城注册</title>
+</head>
+	<!-- 网页图标 -->
+    <link rel="shortcut icon" href="./favicon.ico" tyoe="image/x-icon">
+     <!-- 导入初始化css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+
+    <style>
+		body {
+			background-color: #F7F7F7;
+		}
+		
+		.title {
+			position:fixed;
+			top:40px;
+			width: 200px;
+			height: 200px;	
+
+		}
+		
+		.title p {
+			font-size: 60px;
+			color: #E64145;
+			font-family: "宋体";
+		}
+
+		
+
+		.together {
+			width: 800px;
+			margin: 50px auto;
+			background-color: #FFF;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		.together .choose {
+			width: 100%;
+			/*height: 300px;*/
+			margin: 10px auto;
+			text-align: center;
+			height: 50px;
+
+		}
+
+ 		.together .choose a {
+			display: inline-block;
+			height: 46px;
+			line-height: 46px;
+			font-size: 23px;
+			font-weight: 700;
+			/*border-bottom: 2px solid #E64145;*/	
+ 		}
+		
+		.together .choose a:hover {
+			color: #E64145;
+
+		}	
+
+		.choose span {
+		text-align: center;
+		margin: 0 30px;
+		}
+
+		ul {
+			margin: 0;
+			padding:50px;
+			padding-top: 0;
+		}
+
+		li {
+			display: flex;
+			margin: 20px 0;
+		}
+
+		input,label{
+			display: block;
+			float: left;
+			height: 46px;
+			font-size: 23px;
+			box-sizing: border-box;
+			color: #333;
+		}
+
+		label {
+			width: 200px;
+			line-height: 46px;
+			margin-right: 30px;
+			text-align: right;
+			font-weight: 700;
+		}
+
+		input {
+			width: 320px;
+			padding: 8px;
+			border: 1px solid #cccccc;
+			outline: none;
+			/*text-align: center;*/
+
+		}
+
+		input.code {
+			width: 120px;
+		}
+		
+		input.verify {
+			width: 190px;
+			margin-left: 10px;
+			background-color: red;
+			color:#fff;
+			text-align: center;
+			
+		}
+		
+		/*input.submit {
+			background-color: red;
+			color: #fff;
+		}*/
+		input[type=button] {
+			border: none;
+			color: #fff;
+			background-color: #E64145;
+			border: 4px;
+			cursor: pointer;
+
+		}   
+
+		.tips {
+			/*固定定位*/	
+			position: fixed;
+			top:0;
+			width: 100%;
+			height: 40px;
+			text-align: center;
+			display: none;
+
+		} 
+
+		.tips p {
+			min-width: 300px;
+			max-width: 400px;			
+			margin: 0 auto;
+			line-height: 40px;
+			color: #fff;
+			background-color: #C91623;
+
+		}
+		
+		</style>
+<body>
+	<div class="title">
+		<p>书城</p>
+	</div>
+	<div class="together">
+		<div class="choose"><a href="#" class="login_a">登录</a><span>●</span><a href="#" class="register_a">注册</a></div>
+		
+						<!-- 登录 -->
+						<div class="register">
+						<form action="">
+							<ul>
+								<li>
+										<label for="name">用户名</label>
+										<input type="text" id="name" class="name">
+								</li>
+								<li>
+										<label for="psw">密码</label>
+										<input type="password" id="psw" class="psw">
+								</li>
+								<li>
+										<label for="email">邮箱</label>
+										<input type="email" id="email" class="email">
+								</li>
+								<li>
+										<label for="mobile">手机</label>
+										<input type="phone"  id="mobile" class="mobile">
+								</li>
+								
+						        <li>
+								        <label for=""></label>
+								        <input type="button" class="registerBtn" value="立即注册">
+						        </li>
+							
+							</ul>
+						</form>
+						</div>
+		
+						<!-- 登录 -->
+						<div class="login">
+						<form action="">
+							<ul>
+								<li>
+										<label for="mobile2">手机</label>
+										<input type="text" id="mobile2" >
+								</li>
+								<li>
+										<label for="psw2">密码</label>
+										<input type="password" id="psw2">
+								</li>
+								 <li>
+								        <label for=""></label>
+								        <input type="button" class="loginBtn" value="登录">
+						        </li>
+							</ul>
+						</form>
+						</div>
+
+		
+	</div>
+	<!-- 提示信息 -->
+	<div class="tips">
+		<p>输入有误</p>
+	</div>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+ 
+$(function(){
+	// 页面初始设置 显示login,隐藏register
+	$('.register').css('display','none');
+	$('.login_a').css({
+		color:'#E64145',
+		borderBottom:'2px solid #E64145',
+	});
+	// 逻辑一
+	// 当点击登录按钮，登录字体、下划线为红色，login display为inline-block register为none
+	$('.login_a').on('click',function(){
+		// 设置login
+		$('.login').css('display','inline-block');
+
+		 $('.login_a').css({
+	  	display: 'inline-block',
+	  	borderBottom:"2px solid #E64145",
+	  	color: '#E64145',
+
+		  });
+
+		 //设置register
+		 $('.register').css({
+	    	display:'none',
+	    	
+	    })
+		 $('.register_a').css({
+		 	borderBottom:'none',
+		 	color: '#666',
+		 })
+	})
+	
+
+	
+	
+
+	//逻辑二 
+	//当点击注册按钮，注册字体、下划线为红色，register display为inline-block login为none
+	$('.register_a').on('click',function(){
+		//设置logiin
+		$('.login').css('display','none');
+
+		$('.login_a').css({
+			borderBottom:'none',
+			color:'#666',
+		})
+		//设置register
+	    $('.register').css({
+	    	display:'inline-block',
+	    	
+	    })
+
+	    $('.register_a').css({
+	    	color:'#E64145',
+	    	borderBottom:'2px solid #E64145',
+	    })
+	});
+
+
+
+
+	// 校验逻辑
+	// 点击立即注册
+	// 1.逐一判断所有文本框是否为空
+	// 2.校验邮箱 
+	//    3.1 ^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$
+ 	// 3.校验手机
+	
+	$('.registerBtn').on('click',function(){
+
+			// 1.注意判断是否为空
+			// 用户名为空
+			if($('.name').val() == ''){
+				console.log($('.tips p'))
+				$('.tips p').html('用户名不能为空！').css('display','block');
+				$('.tips').fadeIn(1000).delay(1000).fadeOut(1000);
+			}
+			// 密码为空
+			 if($('.psw').val() == ''){
+				$('.tips p').html('密码不能为空！');
+				$('.tips').fadeIn(1000).delay(1000).fadeOut(1000);
+			}
+			// 邮箱为空
+			 if($('.email').val() == ''){
+				$('.tips p').html('邮箱不能为空！');
+				$('.tips').fadeIn(1000).delay(1000).fadeOut(1000);
+			}
+			// 手机为空
+			if($('.mobile').val() == ''){
+				$('.tips p').html('手机不能为空！');
+				$('.tips').fadeIn(1000).delay(1000).fadeOut(1000);
+			}
+		
+			
+			//2、校验
+			if( !isEmail($('.email').val())){
+				// console.log('邮箱校验失败')
+				$('.tips p').html('邮箱输入不正确！');
+				$('.tips').fadeIn(1000).delay(1000).fadeOut(1000);
+			}
+
+			if(!isPhone($('.phone').val())){
+				// console.log('电话校验失败')
+				$('.tips p').html('电话输入不正确！');
+				$('.tips').fadeIn(1000).delay(1000).fadeOut(1000);
+			}
+			// 2.校验邮箱
+			function isEmail(str){
+				reg =/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+				// console.log(reg.test(str))
+				if(!reg.test(str)){
+					return false;
+				}
+				return true;
+			}
+
+			//校验手机
+			function isPhone(str){
+				reg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+				console.log(reg.test(str));
+				if(!reg.test(str)){
+					return false;
+				}
+				return true;
+			}
+			// isPhone('13420124594');
+
+	})
+
+
+	 
+	
+})
+</script>
+</html>
